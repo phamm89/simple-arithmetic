@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class SimpleArithmetic {
-
+/** User enters two integers and a mathematical operator. 
+ *  Simple Arithmetic performs a calculation and displays the result.
+ */
     public static void main(String[] args) 
     {
         double num1;
@@ -10,7 +12,7 @@ public class SimpleArithmetic {
 
         Scanner scanner = new Scanner(System.in);
         
-        System.out.print("Enter first integer: ");
+        System.out.print("Enter first number: ");
         num1 = scanner.nextDouble();
 
         System.out.print("Enter second number: ");
@@ -20,9 +22,8 @@ public class SimpleArithmetic {
         char operator = scanner.next().charAt(0);
 
         scanner.close();
-        
 
-
+        /** Based on mathematical operator, switch to the corresponding case. */
         switch(operator)
         {
             case '+':
